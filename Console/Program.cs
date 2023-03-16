@@ -4,8 +4,9 @@ using System.Linq.Expressions;
 
 var bridge = new Bridges[]
 {
-    new Bridges("*===+==+==*"),
-    new Bridges("*==+==+==*")
+    new Bridges("*==+==+===*"),
+    new Bridges("*==+===+==*"),
+    new Bridges("*==+====+==*"),
 
 };
 

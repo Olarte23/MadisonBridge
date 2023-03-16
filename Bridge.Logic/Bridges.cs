@@ -27,7 +27,7 @@
             {
                 if (!(_bridge[i].Equals(_bridge[_bridge.Length - i - 1])))
                 {
-                    return "La viga esta mal construida!";
+                    return "La viga esta mal construida1!";
                 }
             }
             for (int i = 1; i < _bridge.Length - 1; i++)
@@ -35,9 +35,13 @@
                 if (_bridge[i].Equals('='))
                 {
                     countPlatform++;
+                    
                     if (countPlatform > 2)
                     {
-                        return "La viga esta mal construida, tiene mas plataformas!";
+                        if (!(i-1 == (int)(_bridge.Length/2)))
+                        {
+                            return "La viga esta mal construida, tiene mas plataformas!";
+                        }                        
                     }
                 }
                 else
