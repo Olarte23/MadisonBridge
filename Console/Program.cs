@@ -2,15 +2,10 @@
 using Bridge.Logic;
 using System.Linq.Expressions;
 
-var bridge = new Bridges[]
-{
-    new Bridges("*==+==+===*"),
-    new Bridges("*==+===+==*"),
-    new Bridges("*==+====+==*"),
+Console.WriteLine("Enter your Bridge: \n");
 
-};
+String? n = Console.ReadLine();
 
-foreach (var item in bridge)
-{
-    Console.WriteLine(item.ValidateBridge());
-}
+var bridges = new Bridges($"{n}");
+
+Console.WriteLine(bridges.ValidateBridge());

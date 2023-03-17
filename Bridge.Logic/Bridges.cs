@@ -27,7 +27,7 @@
             {
                 if (!(_bridge[i].Equals(_bridge[_bridge.Length - i - 1])))
                 {
-                    return "La viga esta mal construida1!";
+                    return "La viga esta mal construida!";
                 }
             }
             for (int i = 1; i < _bridge.Length - 1; i++)
@@ -49,7 +49,7 @@
                     countPlatform = 0;
                 }  
             }
-            return "Valid";
+            return "Valid bridge";
             
         }
     }
